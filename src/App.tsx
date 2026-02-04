@@ -2,10 +2,10 @@ import { useState } from "react";
 
 // GIFS
 const DEFAULT_GIF =
-  "https://gifdb.com/images/high/cute-love-bear-roses-ou7zho5oosxnpo6k.gif";
+  "https://media1.tenor.com/m/yopy9CIqfgUAAAAd/ek-niranjan-brahmi.gif";
 
 const YES_GIF =
-  "https://media.tenor.com/gUiu1zyxfzYAAAAi/bear-kiss-bear-kisses.gif";
+  "https://gifdb.com/images/high/gabbar-singh-brahmi-gif-63req7bpd9dl8x07.webp";
 
 const NO_GIFS = [
   "https://media.giphy.com/media/ISOckXUybVfQ4/giphy.gif",
