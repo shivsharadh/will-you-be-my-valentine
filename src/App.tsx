@@ -32,7 +32,7 @@ const NO_STAGES = [
   },
   {
     text: "Pandi Kukka",
-    gif: "https://gifdb.com/images/thumb/brahmi-hold-me-back-tb2i1d0kdaypitbh.gif",
+    gif: "https://media.gifdb.com/brahmi-hold-me-back-tb2i1d0kdaypitbh.gif",
   },
 ];
 
