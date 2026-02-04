@@ -15,15 +15,15 @@ const YES_GIF =
 // EACH NO CLICK = ONE TEXT + ONE GIF
 const NO_STAGES = [
   {
-    text: "Are you sure?",
+    text: "No",
     gif: "https://gifdb.com/images/thumb/brahmi-looking-back-fcev5g9l4axzkhwd.gif",
   },
   {
-    text: "What if I asked really nicely?",
+    text: "No?",
     gif: "https://gifdb.com/images/thumb/brahmi-king-gif-uqcftluxvtpb50i8.gif",
   },
   {
-    text: "Pretty please",
+    text: "Bujji please",
     gif: "https://gifdb.com/images/thumb/brahmi-oops-wrong-number-2ny12cuhav90zhaj.gif",
   },
   {
@@ -31,7 +31,7 @@ const NO_STAGES = [
     gif: "https://gifdb.com/images/thumb/brahmi-king-gif-zl3wqxv05j4hz1s4.gif",
   },
   {
-    text: "I am going to die",
+    text: "Pandi Kukka",
     gif: "https://gifdb.com/images/thumb/brahmi-wholesome-look-5tfoy1eohfwga70d.gif",
   },
 ];
