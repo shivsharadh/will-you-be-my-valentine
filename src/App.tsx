@@ -8,34 +8,34 @@ const YES_GIF =
 // DEFAULT (before any No)
 const DEFAULT_STAGE = {
   text: "No",
-  gif: "https://media.giphy.com/media/3oEjI6SIIHBdRxXI40/giphy.gif",
+  gif: "https://gifdb.com/images/thumb/brahmi-looking-back-fcev5g9l4axzkhwd.gif",
 };
 
 // EACH NO STAGE = ONE TEXT + ONE GIF
 const NO_STAGES = [
   {
     text: "Are you sure?",
-    gif: "https://media.giphy.com/media/ISOckXUybVfQ4/giphy.gif",
+    gif: "https://gifdb.com/images/thumb/brahmi-oops-wrong-number-2ny12cuhav90zhaj.gif",
   },
   {
     text: "What if I asked really nicely?",
-    gif: "https://media.giphy.com/media/l2QDM9Jnim1YVILXa/giphy.gif",
+    gif: "https://gifdb.com/images/thumb/brahmi-king-gif-zl3wqxv05j4hz1s4.gif",
   },
   {
     text: "Pretty please",
-    gif: "https://media.giphy.com/media/3o6ZtaO9BZHcOjmErm/giphy.gif",
+    gif: "https://gifdb.com/images/thumb/brahmi-king-gif-zl3wqxv05j4hz1s4.gif",
   },
   {
     text: "PLEASE POOKIE",
-    gif: "https://media.giphy.com/media/ROF8OQvDmxytW/giphy.gif",
+    gif: "https://gifdb.com/images/thumb/beat-up-498-x-331-gif-x5rdl1zs7vhm2a02.gif",
   },
   {
     text: "I am going to die",
-    gif: "https://media.giphy.com/media/OPU6wzx8JrHna/giphy.gif",
+    gif: "https://gifdb.com/images/thumb/brahmi-stressed-out-ghg1b6ikc8up3sxu.gif",
   },
   {
     text: "ok ur talking to a ghost",
-    gif: "https://media.giphy.com/media/26ufdipQqU2lhNA4g/giphy.gif",
+    gif: "https://gifdb.com/images/thumb/brahmi-sad-realization-duc8mby9gplgbtcg.gif",
   },
 ];
 
