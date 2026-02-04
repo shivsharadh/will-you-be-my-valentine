@@ -1,45 +1,46 @@
-"use client";
 import { useState } from "react";
 
-// YES GIF
+/* =========================
+   GIF CONFIGURATION
+   ========================= */
+
+// GIF shown BEFORE any click
+const INTRO_GIF =
+  "https://media.tenor.com/pUMrjnWCMbIAAAAM/kiss-muddu.gif";
+
+// GIF shown AFTER YES
 const YES_GIF =
-  "https://media.tenor.com/yopy9CIqfgUAAAAM/ek-niranjan-brahmi.gif";
+  "https://gifdb.com/images/thumb/brahmi-open-arms-9ihf3kgemkw247oo.gif";
 
-// DEFAULT (before any No)
-const DEFAULT_STAGE = {
-  text: "No",
-  gif: "https://media1.tenor.com/m/K06Vfs4pwvwAAAAd/brahmanandham-sad.gif",
-};
-
-// EACH NO STAGE = ONE TEXT + ONE GIF
+// EACH NO CLICK = ONE TEXT + ONE GIF
 const NO_STAGES = [
   {
     text: "Are you sure?",
-    gif: "https://gifdb.com/images/high/brahmi-looking-back-fcev5g9l4axzkhwd.webp",
+    gif: "https://gifdb.com/images/thumb/brahmi-looking-back-fcev5g9l4axzkhwd.gif",
   },
   {
     text: "What if I asked really nicely?",
-    gif: "https://gifdb.com/images/high/brahmi-oops-wrong-number-2ny12cuhav90zhaj.webp",
+    gif: "https://gifdb.com/images/thumb/brahmi-king-gif-uqcftluxvtpb50i8.gif",
   },
   {
     text: "Pretty please",
-    gif: "https://gifdb.com/images/high/brahmi-sad-realization-duc8mby9gplgbtcg.webp",
+    gif: "https://gifdb.com/images/thumb/brahmi-oops-wrong-number-2ny12cuhav90zhaj.gif",
   },
   {
     text: "PLEASE POOKIE",
-    gif: "https://gifdb.com/images/thumb/beat-up-498-x-331-gif-x5rdl1zs7vhm2a02.gif",
+    gif: "https://gifdb.com/images/thumb/brahmi-king-gif-zl3wqxv05j4hz1s4.gif",
   },
   {
     text: "I am going to die",
-    gif: "https://gifdb.com/images/high/brahmi-wholesome-look-5tfoy1eohfwga70d.webp",
-  },
-  {
-    text: "ok ur talking to a ghost",
-    gif: "https://gifdb.com/images/thumb/brahmi-shaking-hands-no-no-x4w4u4u68kn629ce.gif",
+    gif: "https://gifdb.com/images/thumb/brahmi-wholesome-look-5tfoy1eohfwga70d.gif",
   },
 ];
 
-export default function Page() {
+/* =========================
+   APP
+   ========================= */
+
+export default function App() {
   const [noCount, setNoCount] = useState(0);
   const [yesPressed, setYesPressed] = useState(false);
 
@@ -49,19 +50,27 @@ export default function Page() {
     );
   };
 
-  const currentStage =
-    noCount === 0
-      ? DEFAULT_STAGE
-      : NO_STAGES[noCount - 1];
+  const currentNoStage =
+    noCount > 0 ? NO_STAGES[noCount - 1] : null;
 
   return (
-    <div className="flex h-screen flex-col items-center justify-center">
+    <div className="flex h-screen flex-col items-center justify-center text-center">
       {/* GIF */}
-      <img className="h-[200px]" src={yesPressed ? YES_GIF : currentStage.gif} />
+      <img
+        className="h-[220px] mb-6"
+        src={
+          yesPressed
+            ? YES_GIF
+            : noCount === 0
+            ? INTRO_GIF
+            : currentNoStage!.gif
+        }
+        alt="valentine gif"
+      />
 
-      {/* TEXT */}
+      {/* QUESTION */}
       {!yesPressed && (
-        <h1 className="my-4 text-4xl">
+        <h1 className="mb-6 text-4xl font-bold">
           Will you be my Valentine?
         </h1>
       )}
@@ -70,24 +79,27 @@ export default function Page() {
       {!yesPressed && (
         <div className="flex gap-4">
           <button
-            className="rounded bg-green-500 px-4 py-2 font-bold text-white"
+            className="rounded bg-green-500 px-6 py-3 font-bold text-white hover:bg-green-600"
             onClick={() => setYesPressed(true)}
           >
             Yes
           </button>
 
           <button
-            className="rounded bg-red-500 px-4 py-2 font-bold text-white"
+            className="rounded bg-red-500 px-6 py-3 font-bold text-white hover:bg-red-600"
             onClick={handleNoClick}
           >
-            {currentStage.text}
+            {noCount === 0
+              ? "No"
+              : currentNoStage!.text}
           </button>
         </div>
       )}
 
+      {/* YES MESSAGE */}
       {yesPressed && (
-        <div className="mt-4 text-4xl font-bold">
-          WOOOOOO!!! 💖
+        <div className="mt-6 text-4xl font-bold">
+          WOOOOOO!!! 💖💖💖
         </div>
       )}
     </div>
