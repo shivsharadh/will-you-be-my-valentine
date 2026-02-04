@@ -3,27 +3,27 @@ import { useState } from "react";
 
 // YES GIF
 const YES_GIF =
-  "https://media.giphy.com/media/l4FGuhL4U2WyjdkaY/giphy.gif";
+  "https://media.tenor.com/yopy9CIqfgUAAAAM/ek-niranjan-brahmi.gif";
 
 // DEFAULT (before any No)
 const DEFAULT_STAGE = {
   text: "No",
-  gif: "https://gifdb.com/images/thumb/brahmi-looking-back-fcev5g9l4axzkhwd.gif",
+  gif: "https://media1.tenor.com/m/K06Vfs4pwvwAAAAd/brahmanandham-sad.gif",
 };
 
 // EACH NO STAGE = ONE TEXT + ONE GIF
 const NO_STAGES = [
   {
     text: "Are you sure?",
-    gif: "https://gifdb.com/images/thumb/brahmi-oops-wrong-number-2ny12cuhav90zhaj.gif",
+    gif: "https://gifdb.com/images/high/brahmi-looking-back-fcev5g9l4axzkhwd.webp",
   },
   {
     text: "What if I asked really nicely?",
-    gif: "https://gifdb.com/images/thumb/brahmi-king-gif-zl3wqxv05j4hz1s4.gif",
+    gif: "https://gifdb.com/images/high/brahmi-oops-wrong-number-2ny12cuhav90zhaj.webp",
   },
   {
     text: "Pretty please",
-    gif: "https://gifdb.com/images/thumb/brahmi-king-gif-zl3wqxv05j4hz1s4.gif",
+    gif: "https://gifdb.com/images/high/brahmi-sad-realization-duc8mby9gplgbtcg.webp",
   },
   {
     text: "PLEASE POOKIE",
@@ -31,11 +31,11 @@ const NO_STAGES = [
   },
   {
     text: "I am going to die",
-    gif: "https://gifdb.com/images/thumb/brahmi-stressed-out-ghg1b6ikc8up3sxu.gif",
+    gif: "https://gifdb.com/images/high/brahmi-wholesome-look-5tfoy1eohfwga70d.webp",
   },
   {
     text: "ok ur talking to a ghost",
-    gif: "https://gifdb.com/images/thumb/brahmi-sad-realization-duc8mby9gplgbtcg.gif",
+    gif: "https://gifdb.com/images/thumb/brahmi-shaking-hands-no-no-x4w4u4u68kn629ce.gif",
   },
 ];
 
