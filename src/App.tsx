@@ -31,7 +31,7 @@ const NO_STAGES = [
     gif: "https://gifdb.com/images/thumb/brahmi-king-gif-zl3wqxv05j4hz1s4.gif",
   },
   {
-    text: "Pandi Kukka",
+    text: "Pandi Kukka, YES nokkave",
     gif: "https://gifdb.com/images/high/brahmi-hold-me-back-tb2i1d0kdaypitbh.webp",
   },
 ];
