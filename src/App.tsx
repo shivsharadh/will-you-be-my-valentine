@@ -116,7 +116,7 @@ export default function App() {
       {/* YES MESSAGE */}
       {yesPressed && (
         <div className="mt-6 text-4xl font-bold">
-          WOOOOOO!!! 💖💖💖
+          NINNU NAA PREMA LO NALIPESTHA DHA BUJJI 💖💖💖
         </div>
       )}
     </div>
